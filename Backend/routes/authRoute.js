@@ -14,4 +14,9 @@ router.post('/register', registerController)
 
  router.get('/test' ,requireSignIn ,  testController)
 
+ //protected User route auth
+router.get("/user-auth", requireSignIn, (req, res) => {
+  res.status(200).send({ ok: true });
+});
+
 module.exports = router;
