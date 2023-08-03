@@ -9,6 +9,7 @@ import Register from './pages/Auth/Register';
 import Login from './pages/Auth/Login';
 import PrivateRoute from './components/Routes/Private';
 import Dashboard from './pages/user/Dashboard';
+import ForgotPasssword from './pages/Auth/ForgotPassword';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/policy" element={<Policy />} />
         <Route path="*" element={<Pagenotfound />} />
+        <Route path="/forgot-password" element={<ForgotPasssword />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
 
